@@ -21,7 +21,7 @@ Install Gritty-if with npm
 
 ```bash
   npm install Gritty-if
-  cd the-solar-system-website
+  cd Gritty-if
 ```
     
 ## Lessons Learned
