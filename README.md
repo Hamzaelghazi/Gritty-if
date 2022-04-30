@@ -17,10 +17,10 @@ Javascript, HTML, CSS ,Bootstrap, Reactjs , Git and Github
 
 ## Installation
 
-Install my-project with npm
+Install Gritty-if with npm
 
 ```bash
-  npm install the-solar-system-website
+  npm install Gritty-if
   cd the-solar-system-website
 ```
     
