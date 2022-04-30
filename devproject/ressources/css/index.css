@@ -1,0 +1,54 @@
+.banner {
+
+    background-color: #4D00FF;
+    color: bisque;
+    margin: top 40px;
+    text-align: center;
+    padding: 100px 0px;
+}
+.image{
+    height: 200px;
+    width: 200px;
+    border: 3px blue;
+    filter: drop-shadow(3px 3px 3px black);
+}
+#Gritter {
+    color: #4D00FF;
+    font-size: 100px;
+}
+.bold {
+    font-weight: 900;
+}
+.Navbar {
+    background-color: white;
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+.Navbar li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.Navbar a {
+    text-decoration: none;
+    color: black;
+}
+a.blue {
+    color: blue;
+}
+#greets ul {
+    list-style-type: none ;
+
+}
+.gritter-section {
+    padding: 20px 50px;
+}
+.avatar {
+    background-image: url(../images/mstr.png);
+    background-size: cover;
+    height: 50px;
+    width: 50px ;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
