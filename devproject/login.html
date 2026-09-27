@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Log in to your Gritty-ify account and keep building your brand.">
+    <title>Log in — Gritty-ify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./ressources/css/all.min.css">
+    <link rel="stylesheet" href="./ressources/css/login.css">
+</head>
+<body>
+    <!-- Animated brand background -->
+    <div class="bg" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+    </div>
+
+    <main class="shell">
+        <!-- Left: marketing panel (hidden on small screens) -->
+        <section class="pitch" aria-label="Why Gritty-ify">
+            <a class="brand brand-light" href="./index.html">
+                <span class="brand-mark">G</span> Gritty-ify
+            </a>
+
+            <div class="pitch-body">
+                <p class="eyebrow">Commerce, with grit</p>
+                <h1>Your brand deserves a store that <span class="accent">converts</span>.</h1>
+                <p class="lede">Launch, sell and scale from one dashboard. Thousands of creators already run their business on Gritty-ify.</p>
+
+                <ul class="stats">
+                    <li><strong>+38%</strong><span>avg. checkout conversion</span></li>
+                    <li><strong>2 min</strong><span>to launch a store</span></li>
+                    <li><strong>24/7</strong><span>real human support</span></li>
+                </ul>
+
+                <figure class="quote">
+                    <blockquote>“We moved over on a Friday and doubled our weekend sales. The checkout just works.”</blockquote>
+                    <figcaption>
+                        <span class="avatar">M</span>
+                        <span><strong>Maya R.</strong><br>Founder, Northbound Apparel</span>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <p class="pitch-foot"><i class="fa-solid fa-shield-halved"></i> Bank-level encryption on every login</p>
+        </section>
+
+        <!-- Right: login card -->
+        <section class="card-wrap">
+            <div class="card" role="region" aria-labelledby="login-title">
+                <a class="brand" href="./index.html">
+                    <span class="brand-mark">G</span> Gritty-ify
+                </a>
+
+                <h2 id="login-title">Log in</h2>
+                <p class="subtitle" id="login-subtitle">Continue to Gritty-ify</p>
+
+                <form id="login-form" novalidate>
+                    <!-- Step 1: email -->
+                    <div class="step" data-step="email">
+                        <div class="field">
+                            <input type="email" id="email" name="email" autocomplete="email" placeholder=" " required>
+                            <label for="email">Email</label>
+                        </div>
+                        <p class="error" id="email-error" role="alert"></p>
+                    </div>
+
+                    <!-- Step 2: password -->
+                    <div class="step" data-step="password" hidden>
+                        <button type="button" class="chip" id="edit-email">
+                            <i class="fa-regular fa-user"></i>
+                            <span id="email-chip"></span>
+                            <i class="fa-solid fa-pen"></i>
+                        </button>
+                        <div class="field">
+                            <input type="password" id="password" name="password" autocomplete="current-password" placeholder=" " required minlength="6">
+                            <label for="password">Password</label>
+                            <button type="button" class="toggle-pw" id="toggle-pw" aria-label="Show password">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                        </div>
+                        <p class="error" id="password-error" role="alert"></p>
+                        <div class="row">
+                            <label class="check"><input type="checkbox" name="remember" checked> Remember me</label>
+                            <a href="#" class="link">Forgot password?</a>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary" id="submit-btn">
+                        <span class="btn-label">Continue with email</span>
+                        <span class="spinner" aria-hidden="true"></span>
+                    </button>
+                </form>
+
+                <div class="divider"><span>or</span></div>
+
+                <div class="socials">
+                    <button type="button" class="btn-social"><i class="fa-brands fa-apple"></i><span>Apple</span></button>
+                    <button type="button" class="btn-social"><i class="fa-brands fa-facebook" style="color:#1877F2"></i><span>Facebook</span></button>
+                    <button type="button" class="btn-social"><i class="fa-brands fa-google" style="color:#EA4335"></i><span>Google</span></button>
+                </div>
+
+                <p class="signup">New to Gritty-ify? <a href="#" class="link">Get started <i class="fa-solid fa-arrow-right"></i></a></p>
+
+                <div class="success" id="success" hidden>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>Welcome back!</h3>
+                    <p>Redirecting you to your dashboard…</p>
+                </div>
+            </div>
+
+            <footer class="legal">
+                <a href="#">Help</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </footer>
+        </section>
+    </main>
+
+    <script src="./ressources/js/login.js"></script>
+</body>
+</html>
