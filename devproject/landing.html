@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gritty-ify — launch your brand's store and start selling in minutes. Get early access.">
+    <title>Gritty-ify — Get early access</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./ressources/css/all.min.css">
+    <link rel="stylesheet" href="./ressources/css/landing.css">
+</head>
+<body>
+    <div class="bg" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+    </div>
+
+    <header class="topbar">
+        <a class="brand" href="./index.html"><span class="brand-mark">G</span> Gritty-ify</a>
+        <a class="nav-cta" href="#signup">Get started <i class="fa-solid fa-arrow-right"></i></a>
+    </header>
+
+    <main class="hero">
+        <div class="hero-copy">
+            <p class="eyebrow">Commerce, with grit</p>
+            <h1>Launch your brand's store and <span class="accent">start selling</span> in minutes.</h1>
+            <p class="lede">Join the creators building high-converting stores on Gritty-ify. Drop your name and email — we'll send you early access.</p>
+
+            <ul class="ticks">
+                <li><i class="fa-solid fa-check"></i> No code, no credit card</li>
+                <li><i class="fa-solid fa-check"></i> Set up in under 2 minutes</li>
+                <li><i class="fa-solid fa-check"></i> Real human support, 24/7</li>
+            </ul>
+
+            <div class="proof">
+                <div class="avatars">
+                    <span>M</span><span>K</span><span>A</span><span>R</span>
+                </div>
+                <p><strong>2,400+</strong> founders already on the list</p>
+            </div>
+        </div>
+
+        <div class="signup-wrap" id="signup">
+            <form class="signup" id="lead-form" novalidate>
+                <h2>Get early access</h2>
+                <p class="form-sub">We'll be in touch soon. No spam, ever.</p>
+
+                <div class="field">
+                    <input type="text" id="name" name="name" autocomplete="name" placeholder=" " required>
+                    <label for="name">Your name</label>
+                </div>
+                <p class="error" id="name-error" role="alert"></p>
+
+                <div class="field">
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder=" " required>
+                    <label for="email">Email address</label>
+                </div>
+                <p class="error" id="email-error" role="alert"></p>
+
+                <button type="submit" class="btn-primary" id="submit-btn">
+                    <span class="btn-label">Claim my spot</span>
+                    <span class="spinner" aria-hidden="true"></span>
+                </button>
+
+                <p class="fineprint">By joining you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.</p>
+
+                <div class="success" id="success" hidden>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>You're on the list!</h3>
+                    <p>Check your inbox — we'll send your early-access link shortly.</p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="foot">
+        <span>&copy; <span id="year"></span> Gritty-ify</span>
+        <div class="foot-links">
+            <a href="#">Help</a><a href="#">Privacy</a><a href="#">Terms</a>
+        </div>
+    </footer>
+
+    <script src="./ressources/js/landing.js"></script>
+</body>
+</html>
